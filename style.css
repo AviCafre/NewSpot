@@ -303,10 +303,93 @@ hr{
     .bannertwo{
         padding: 10px;
         margin-bottom: 20px;}
-        
+
     .banner .content, .bannertwo .content {
         width: 80%;
         padding: 50px 0 0 30px;
         margin: 10px;
     }
+}
+
+@media (max-width:490px){
+    .LOGO{
+        padding-top: 0px;
+        width: 50px;
+        height: 50px;
+        }
+    .nav-main{
+        font-size: 10px;
+        display: block;
+        justify-content: left;
+        align-items: center;
+        height: 40px;
+        padding: 0;
+        
+    }
+    .nav-main ul{
+        display: block;
+        background-color: #5e5655;
+        justify-content: left;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-main {
+        display: none;
+    }
+    .showcase{
+        width: 100%;
+        padding: 20px;
+    }
+   
+    .card{
+        width: 100%;
+        opacity: .9;
+    }
+    .news-cards{
+        display:grid;
+        grid-template-columns:  1fr;
+    }
+    .content{
+        margin: 0;
+        padding: 0;
+    }
+    .banner {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .bannertwo{
+        padding: 10px;
+        margin-bottom: 20px;}
+        
+    .banner .content, .bannertwo .content {
+        padding: 10px;
+    }
+    .social{
+        margin: 10px;
+    }
+    
+    .social p{
+        font-size: 30px;
+    }
+    .links a{
+        margin: 0 20px;
+    }
+    .footer{
+        background: black;
+        width: 100%;
+        color: #C1BCBC;
+        font-size: 5px;
+        padding: 10px ;
+    }
+    
+    .footer-container{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .footer-container ul{
+        margin: 10px;
+        padding: 10px;
+    }
+   
+    
 }
