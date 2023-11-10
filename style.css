@@ -72,13 +72,17 @@ hr{
 .showcase{
     width: 100%;
     background: url('images/pexel.jpg') no-repeat center/cover;
-    padding-bottom: 80px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
+}
+.showcase p{
+    background-color: rgba(41, 39, 39, 0.7);
+    
 }
 
 .btn{
@@ -104,7 +108,7 @@ hr{
 /*NEWS CARDS*/
 .card{
     background-color: #474140;
-    opacity: .7;
+    opacity: .9;
     color: white;
 }
 .news-cards{
@@ -235,4 +239,74 @@ hr{
 }
 .foot .black{
     background: black;
+}
+
+@media (max-width:670px){
+    .LOGO{
+        padding-top: 0px;
+        width: 50px;
+        height: 50px;
+        }
+    .nav-main{
+        font-size: 10px;
+        display: block;
+        justify-content: left;
+        align-items: center;
+        height: 40px;
+        padding: 0;
+        
+    }
+    .nav-main ul{
+        display: block;
+        background-color: #5e5655;
+        justify-content: left;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-main {
+        display: none;
+    }
+    .showcase{
+        padding: 20px;
+    }
+    .showcase p{
+        background-color: rgba(41, 39, 39, 0.7);
+        
+    }
+    
+    .btn{
+        padding: 5px 10px;
+        margin: 10px;
+    }
+    .card{
+        width: 250px;
+        background-color: #474140;
+        opacity: .9;
+        color: white;
+    }
+    .news-cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 10px 0;
+    
+    }
+    .news-cards img{
+        width: 100%;
+        height: 150px;   
+    }
+    .banner {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .bannertwo{
+        padding: 10px;
+        margin-bottom: 20px;}
+        
+    .banner .content, .bannertwo .content {
+        width: 80%;
+        padding: 50px 0 0 30px;
+        margin: 10px;
+    }
 }
