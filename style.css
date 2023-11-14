@@ -68,6 +68,7 @@ a{
 /*SHOWCASE*/
 hr{
    margin:20 20; 
+  
 }
 .showcase{
     width: 100%;
@@ -243,39 +244,44 @@ hr{
 }
 
 @media (max-width:670px){
+    .body{
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: auto;
+        margin: 8px;
+        justify-content: center;
+        align-items: center;
+      }
     .LOGO{
-        padding-top: 0px;
-        width: 50px;
-        height: 50px;
-        }
-    .nav-main{
-        font-size: 10px;
-        display: block;
-        justify-content: left;
-        align-items: center;
-        height: 40px;
-        padding: 0;
-        
+        width: 80px;
+        height: 80px;
     }
+    
     .nav-main ul{
-        display: block;
-        background-color: #5e5655;
-        justify-content: left;
-        align-items: center;
-        margin: 0;
-        padding: 0;
+        display: flex;
+        padding: 1px;
+        margin: 3px;
     }
-    .nav-main {
-        display: none;
+    .nav-main ul li{
+        padding: 5px;
+        list-style: none;
+    }
+    .nav-main ul li a {
+        padding: 2px;
+        font-size: 13px;
     }
     .showcase{
         padding: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .showcase p{
-        background-color: rgba(41, 39, 39, 0.7);
-        
+        background-color: rgba(41, 39, 39, 0.7);  
     }
-    
     .btn{
         padding: 5px 10px;
         margin: 10px;
@@ -291,6 +297,8 @@ hr{
         grid-template-columns: 1fr 1fr;
         gap: 15px;
         margin: 10px 0;
+        justify-content: center;
+        align-items: center;
     
     }
     .news-cards img{
@@ -298,10 +306,12 @@ hr{
         height: 150px;   
     }
     .banner {
+        width: 100%;
         padding: 10px;
         margin-bottom: 20px;
     }
     .bannertwo{
+        width: 100%;
         padding: 10px;
         margin-bottom: 20px;}
 
@@ -310,34 +320,40 @@ hr{
         padding: 50px 0 0 30px;
         margin: 10px;
     }
-}
-
-@media (max-width:490px){
-    .LOGO{
-        padding-top: 0px;
-        width: 50px;
-        height: 50px;
-        }
-    .nav-main{
-        font-size: 10px;
-        display: block;
-        justify-content: left;
+    .footer{
+        width: 100%;
+        justify-content: center;
         align-items: center;
-        height: 40px;
-        padding: 0;
-        
     }
-    .nav-main ul{
-        display: block;
-        background-color: #5e5655;
-        justify-content: left;
-        align-items: center;
+    .footer ul{
         margin: 0;
         padding: 0;
     }
-    .nav-main {
-        display: none;
+    .foot{
+        width: auto;
     }
+}
+
+@media (max-width:490px){
+        .LOGO{
+            width: 80px;
+            height: 80px;
+        }
+        .nav-main ul{
+            position: absolute;
+            background-color: #474140;
+            display: block;
+            padding: 1px;
+            margin: 30px;
+        }
+        .nav-main ul li{
+            padding: 3px;
+            list-style: none;
+        }
+        .nav-main ul li a {
+            padding: 2px;
+            font-size: 13px;
+        }
     .showcase{
         width: 100%;
         padding: 20px;
